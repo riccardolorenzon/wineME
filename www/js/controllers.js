@@ -1,13 +1,5 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
-
-.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  }
-})
 .controller('ChoiceController', function($scope, $location) {
     $scope.goToCamera = function(){
         window.location.href = "#/camera";
@@ -16,11 +8,6 @@ angular.module('starter.controllers', [])
 .controller('LoginController', function($scope, $location) {
     $scope.goToCamera = function(){
         window.location.href = "#/choice";
-    };
-})
-.controller('MosaicController', function($scope, $location) {
-    $scope.goToCamera = function(){
-        window.location.href = "#/mosaic";
     };
 })
 .controller('ResultController', function($scope, $location) {
